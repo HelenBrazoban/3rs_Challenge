@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Desafío de las Tres R!</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="game-area">
+        <h1>The 3Rs Challenge</h1>
+        <div id="card-container">
+        
+            <img src="img/botella_plastico.png" alt="Botella de Plástico" onclick="selectCard('plastic bottle')">
+            <img src="img/old_shirt_icon.png" alt="Camiseta Vieja" onclick="selectCard('old shirt')">
+            <img src="img/light_bulb_icon.png" alt="Bombilla Encendida" onclick="selectCard('light bulb (on)')">
+            <img src="img/glass_bottle_icon.png" alt="Botella de Vidrio" onclick="selectCard('glass bottle')">
+            <img src="img/newspaper_icon.png" alt="Papel de Periódico" onclick="selectCard('newspaper')">
+            <img src="img/yogurt_container_icon.png" alt="Envase de Yogur" onclick="selectCard('yogurt container')">
+            <img src="img/cardboard_box_icon.png" alt="Caja de Cartón" onclick="selectCard('cardboard box')">
+            <img src="img/can_icon.png" alt="Lata de Refresco" onclick="selectCard('soda can')">
+            <img src="img/old_magazine_icon.png" alt="Revista Vieja" onclick="selectCard('old magazine')">
+            <img src="img/old_computer_icon.png" alt="Computadora Vieja" onclick="selectCard('old computer')">
+            <img src="img/milk_container_icon.png" alt="Envase de Leche" onclick="selectCard('milk container')">
+            <img src="img/plastic_bag_icon.png" alt="Bolsa de Plástico" onclick="selectCard('plastic bag')">
+            <img src="img/broken_toy_icon.png" alt="Juguete Roto" onclick="selectCard('broken toy')">
+            <img src="img/old_books_icon.png" alt="Libros Viejos" onclick="selectCard('old books')">
+            <img src="img/broken_scissors_icon.png" alt="Tijeras Rota" onclick="selectCard('broken scissors')">
+            <img src="img/old_appliance_icon.png" alt="Electrodoméstico Viejo" onclick="selectCard('old appliance')">
+            <img src="img/used_shoes_icon.png" alt="Zapatos Usados" onclick="selectCard('used shoes')">
+            <img src="img/old_towel_icon.png" alt="Toalla Vieja" onclick="selectCard('old towel')">
+            <img src="img/food_waste_icon.png" alt="Restos de Comida" onclick="selectCard('food waste')">
+            <img src="img/old_toothbrush_icon.png" alt="Cepillo de Dientes Viejo" onclick="selectCard('old toothbrush')">
+            <img src="img/batteries_icon.png" alt="Pilas Usadas" onclick="selectCard('used batteries')">
+            <img src="img/used_oil_icon.png" alt="Aceite Usado" onclick="selectCard('used oil')">
+            
+            <!-- Añade más tarjetas según sea necesario -->
+        </div>
+        <div id="bins">
+            <!-- Imágenes para las opciones de clasificación -->
+            <img src="img/reduce_icon.png" alt="Icono de Reducir" onclick="classify('Reduce')">
+            <img src="img/reuse_icon.png" alt="Icono de Reutilizar" onclick="classify('Reuse')">
+            <img src="img/recycle_icon.png" alt="Icono de Reciclar" onclick="classify('Recycle')">
+        </div>
+    
+    <div id="result"></div>
+    <script src="game.js"></script>
+</div>
+</body>
+</html>

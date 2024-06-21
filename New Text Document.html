@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>El Desafío de las Tres R</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Color de fondo opcional */
+        }
+        #game-area {
+            text-align: center;
+            background-color: white; /* Fondo blanco para el área del juego */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100px; /* Ajusta el tamaño según el tamaño de tus imágenes */
+            height: 100px;
+            cursor: pointer;
+            margin: 20px; /* Espacio entre las imágenes */
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-area">
+        <h1>El Desafío de las Tres R</h1>
+        <div>
+            <img src="reduce_icon.png" alt="Icono de Reducir" onclick="classify('Reducir')">
+            <img src="reuse_icon.png" alt="Icono de Reutilizar" onclick="classify('Reutilizar')">
+            <img src="recycle_icon.png" alt="Icono de Reciclar" onclick="classify('Reciclar')">
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
